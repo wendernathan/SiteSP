@@ -16,7 +16,7 @@ body {
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header header header"
-    "content content content"
+    "xxxxxx content xxxxx"
     "footer  footer  footer";
     justify-items: center;
 }
@@ -74,4 +74,43 @@ body {
 
 .box {
   padding: 5px;
+}
+
+.box_parceiros{
+  display: grid;
+  grid-area: content;
+  grid-gap: 15px;
+  grid-template-columns: 6fr 6fr;
+  grid-template-rows: 4fr 4fr 4fr;
+  align-items: center;
+}
+
+.parceiros_logo1{
+  max-width: 50%;
+  height: auto;
+  
+}
+.parceiros_logo2{
+  max-width: 100%;
+  height: auto;
+}
+
+.parceiros_logo3{
+  max-width: 100%;
+  height: auto;
+}
+
+.parceiros_logo4{
+  max-width: 100%;
+  height: auto;
+}
+
+.parceiros_logo5{
+  max-width: 100%;
+  height: auto;
+}
+
+.parceiros_logo6{
+  max-width: 100%;
+  height: auto;
 }
