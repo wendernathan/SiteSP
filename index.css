@@ -12,7 +12,7 @@ body {
   min-height: 100%;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr 2fr 1fr;
+  /* grid-template-columns: 1fr 2fr 1fr; */
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header header header"
@@ -80,9 +80,19 @@ body {
   display: grid;
   grid-area: content;
   grid-gap: 15px;
-  grid-template-columns: 6fr 6fr;
-  grid-template-rows: 4fr 4fr 4fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
   align-items: center;
+}
+
+.item {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+  color: #999999;
 }
 
 .parceiros_logo1{
@@ -113,4 +123,13 @@ body {
 .parceiros_logo6{
   max-width: 100%;
   height: auto;
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    grid-template-areas:
+      "header"
+      "content"
+      "footer"
+  }
 }
